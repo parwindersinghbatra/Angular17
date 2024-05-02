@@ -1,0 +1,29 @@
+<header>
+    <nav>
+      <div class="logo">
+        <a routerLink="/">Angular</a>
+      </div>
+      <ul class="menu-items">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/create">Create code</a></li>
+        <li><a routerLink="/about">About</a></li>
+        @if(authService.isAuthenticated()) {
+          <li (click)="authService.signOutUser()">Logout</li>
+        }@else{
+          <div class="user-options">
+            <a routerLink="/login">Login</a>
+            <a routerLink="/signup">Signup</a>
+          </div>
+        }
+        
+       
+       
+      
+      </ul>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button><i class="bx bx-search"></i></button>
+      </div>
+    </nav>
+  </header>

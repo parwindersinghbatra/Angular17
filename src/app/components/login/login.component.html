@@ -1,0 +1,10 @@
+<form class="container" [formGroup] ="loginForm">
+    <h4>Login Form </h4>
+    <input type="email" placeholder="Email here" [formControl]="email"/>
+    <h5 [hidden]="email.valid || email.untouched" class="error-message">Please corrent email</h5>
+    <input type="password" placeholder="Password here" [formControl]="password"/>
+    <h5 [hidden]="password.valid || password.untouched" class="error-message">password is greator than > 6</h5>
+    <button (click)="login()" [disabled]="loginForm.invalid" class="btn-green">Login</button>
+    <button (click)="reset()" class="btn-blue">Reset</button>
+</form>
+

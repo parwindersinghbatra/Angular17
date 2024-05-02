@@ -1,0 +1,40 @@
+form{
+    max-width: 400px;
+    margin:50px auto;
+    padding: 20px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.red-text{
+    color:red;
+    font-size: 14px;
+}
+button{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+textarea{
+    background: #000d53;
+    color: white;
+}
+button:hover{
+    background-color: #0056b3;
+}
